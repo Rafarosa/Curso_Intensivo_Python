@@ -116,8 +116,29 @@ mensagem = "'Você é um cocô... e eu vou matar você'"
 
 print(f'{famous_person} disse uma vez: {mensagem}')
 """
-2.7 Removendo nomes: Use métodos de string para representar o nome de uma pessoa, incluindo alguns caracteres em espaço em branco no início e no final do nome. Lembre-se de usar cada uma das combinações de “l”, “r” e “n”, pelo menos em alguma das partes da string. Mostre o nome sem espaço extra no começo ou fim usando as funções strip(), rstrip() e lstrip(). Imprima o nome usando cada um dos três métodos de remoção.
-
-2.8 Extensões de arquivos: O Python tem um método removesulfiix() que funciona exatamente como removeprefix(). Atribua o valor 'python_notes.txt' a uma variavel chamada filename. Depois,
-utilize o método removesuffix() para extrair o nome do arquivo sem a extensão do arquivo, como alguns navegadores de arquivos fazem.
+2.7 Removendo nomes: 
+Use métodos de string para representar o nome de uma pessoa, incluindo alguns caracteres em espaço em branco no início e no final do nome. 
+Lembre-se de usar cada uma das combinações de “l”, “r” e “n”, pelo menos em alguma das partes da string. 
+Mostre o nome sem espaço extra no começo ou fim usando as funções strip(), rstrip() e lstrip(). Imprima o nome usando cada um dos três métodos de remoção.
 """
+name = "\tEric Matthes\n"
+
+print("Unmodified:")
+print(name)
+
+print("\nUsing lstrip():")
+print(name.lstrip())
+
+print("\nUsing rstrip():")
+print(name.rstrip())
+
+print("\nUsing strip():")
+print(name.strip())
+"""
+2.8 Extensões de arquivos: O Python tem um método removesulfiix() que funciona exatamente como removeprefix(). 
+Atribua o valor 'python_notes.txt' a uma variavel chamada filename. 
+Depois,utilize o método removesuffix() para extrair o nome do arquivo sem a extensão do arquivo, como alguns navegadores de arquivos fazem.
+"""
+filename = 'python_notes.txt'
+filename = filename.removesuffix('.txt')
+print(filename)
